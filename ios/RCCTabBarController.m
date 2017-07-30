@@ -79,6 +79,8 @@
   self.delegate = self;
   
   self.tabBar.translucent = YES; // default
+
+  self.tabBar.hidden = TRUE;
   
   UIColor *buttonColor = nil;
   UIColor *selectedButtonColor = nil;
