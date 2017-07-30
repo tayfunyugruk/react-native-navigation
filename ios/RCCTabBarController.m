@@ -80,7 +80,7 @@
   
   self.tabBar.translucent = YES; // defaults
   
-  [self..tabBar setHidden:YES];
+  [self.tabBar setHidden:YES];
 
   //[self.tabBarController.tabBar setHidden:YES];
   
