@@ -221,9 +221,6 @@
   self.viewControllers = viewControllers;
   
   [self setRotation:props];
-
-  // [self.setTabBarHidden:TRUE animated:TRUE];
-  self.tabBar.hidden = TRUE;
   
   return self;
 }
