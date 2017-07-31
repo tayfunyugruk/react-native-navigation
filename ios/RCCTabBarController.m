@@ -222,7 +222,8 @@
   
   [self setRotation:props];
 
-  [self.setTabBarHidden:TRUE animated:TRUE];
+  // [self.setTabBarHidden:TRUE animated:TRUE];
+  self.tabBar.hidden = TRUE;
   
   return self;
 }
