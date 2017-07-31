@@ -221,23 +221,7 @@
   
   [self setRotation:props];
 
-  //
-  BOOL hidden = TRUE;
-  [UIView animateWithDuration: (0)
-                      delay: 0
-      usingSpringWithDamping: 0.75
-      initialSpringVelocity: 0
-                    options: (hidden ? UIViewAnimationOptionCurveEaseIn : UIViewAnimationOptionCurveEaseOut)
-                  animations:^()
-  {
-    self.tabBar.transform = hidden ? CGAffineTransformMakeTranslation(0, self.tabBar.frame.size.height) : CGAffineTransformIdentity;
-  }
-                  completion:^(BOOL finished)
-  {
-    // do nothing
-  }];
-  //[self.tabBarController.tabBar setHidden:YES];
-  //
+  [self.tabBar setHidden:YES];
   
   return self;
 }
